@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/app.css">
+    <script src="https://kit.fontawesome.com/0b63d1f56a.js" crossorigin="anonymous"></script>
+    <title>Intro section with dropdown navigation</title>
+</head>
+<body>
+    <!-- #################### -->
+        <!-- Header Elements -->
+    <!-- #################### -->
+    <header>
+        <div class="logo"><a href="#"><img class="logoImg" src="assets/logo.svg" alt="logo"></a></div>
+        <svg onclick="ToggleMenu()" id="navIcon" width="32" height="18" xmlns="http://www.w3.org/2000/svg"><g fill="#151515" fill-rule="evenodd"><path d="M0 0h32v2H0zM0 8h32v2H0zM0 16h32v2H0z"/></g></svg>
+        <nav>
+        <div class="navbar">
+            <div class="nav-links">
+                <ul class="links">
+                    <li><a class="white" id="dropFeatures" onclick="DropDownMenu()" href="#">Features</a>
+                        <i class="fa fa-chevron-down"></i>
+                        <ul id="dropDownF" class="feature-sub-links sub-links">
+                            <li>
+                                <i class="fa-solid fa-clipboard-list"></i>
+                                <a href="#">Todo List</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-calendar-days"></i>
+                                <a href="#">Calendar</a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-bell"></i>
+                                <a href="#">Reminders</a>
+                            </li>
+                            <li>
+                                <i class="fa-regular fa-clock"></i>
+                                <a href="#">Planning</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="white" id="dropCompany" onclick="DropDownMenu()" href="#">Company</a>
+                        <i class="fa fa-chevron-down"></i>
+                        <ul id="dropDownC" class="company-sub-links sub-links">
+                            <li>
+                                <a href="#">History</a>
+                            </li>
+                            <li>
+                                <a href="#">Our Team</a>
+                            </li>
+                            <li>
+                                <a href="#">Blog</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="white" href="#">Careers</a></li>
+                    <li><a class="white" href="#">About</a></li>
+                </ul>
+            </div>
+        </div>
+            <div class="navBtn">
+                <button class="login">Login</button>
+                <button class="register">Register</button>
+            </div>
+       </nav>
+    </header>
+
+    <!-- #################### -->
+        <!-- Main Elements -->
+    <!-- #################### -->
+
+    <main>
+        <div class="container">
+            <div class="hero image-hero">
+                <img class="image-hero-desktop" src="assets/image-hero-desktop.png" alt="image-hero">
+                <img class="image-hero-mobile" src="assets/image-hero-mobile.png" alt="">
+            </div>
+            <div class="hero text-hero">
+                    <h1>Make remote work</h1>
+                    <p>Get your team in sync, no matter your location. Streamline processes, 
+                    create team rituals, and watch productivity soar.</p>
+                    <button type="button"> Learn more</button>
+                <div class="heroImg">
+                    <img src="assets/client-audiophile.svg" alt="client-audiophile">
+                    <img src="assets/client-databiz.svg" alt="client-databiz">
+                    <img src="assets/client-maker.svg" alt="client-maker">
+                    <img src="assets/client-meet.svg" alt="client-meet">
+                </div>
+            </div>
+        </div> 
+    </main>
+
+    
+
+
+
+    <!-- #################### -->
+        <!-- footer -->
+    <!-- #################### -->
+  
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io/" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://github.com/jibrilosman" target="_blank">Jibril Omar</a>.
+      </div>
+
+    <script src="scripts/jquery.js"></script>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
